@@ -1,0 +1,52 @@
+.mega-menu {
+    opacity:0;
+    visibility:hidden;
+    z-index: -900;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    transition: all 0.15s linear 0s;
+  }
+
+
+
+  /* #hoverable Class Styles */
+  .hoverable {
+    position: static;
+  }
+
+  .hoverable > a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .hoverable:hover .mega-menu {
+    opacity:1;
+    visibility:visible;
+    z-index: 900;
+  }
+
+
+  .slick-next{
+     right: 46px;
+  } 
+  .slick-prev{
+    left: 46px;
+    z-index: 1;
+  }
+  .slick-prev:before, .slick-next:before{
+    font-size: 32px;
+    background: #000;
+    border-radius: 100%;
+  }
+  .main-carousel-img{
+    transform: scale(1.0)
+  }
+  .main-carousel-img:hover{
+    transform: scale(1.1);
+    transition: transform 2000ms ease-in-out;
+  }
