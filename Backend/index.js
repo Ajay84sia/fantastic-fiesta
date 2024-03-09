@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const db = require("./config/db");
-
+const mensRoutes = require("./routes/mensRoutes");
 
 const port = 8080;
 
@@ -11,8 +11,11 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-    res.status(200).json({ msg: "Welcome to Notes Backend API" })
+    res.status(200).json({ msg: "Welcome to Fantastic Backend API" })
 })
+
+app.use("/mens", mensRoutes);
+
 
 
 app.listen(port, async () => {
