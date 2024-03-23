@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const db = require("./config/db");
 const mensRoutes = require("./routes/mensRoutes");
+const womensRoutes = require("./routes/womensRoutes");
 
 const port = 8080;
 
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 })
 
 app.use("/mens", mensRoutes);
+app.use("/womens", womensRoutes);
 
 
 
