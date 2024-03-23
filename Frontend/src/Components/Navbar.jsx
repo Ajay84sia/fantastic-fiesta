@@ -15,7 +15,9 @@ const Navbar = () => {
       <li className="hover:bg-teal-700 hover:text-white">
         <Link to='/' className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Home</Link>
       </li>
-
+      <li className="hover:bg-teal-700 hover:text-white">
+        <Link to='/men' className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Men</Link>
+      </li>
           {/* <!--Hoverable Link--> */}
           <li className="hoverable hover:bg-teal-700 hover:text-white">
             <a href="#" className="relative block py-6 px-4 lg:p-6 text-sm lg:text-base font-bold hover:bg-teal-700 hover:text-white">Hover to show</a>

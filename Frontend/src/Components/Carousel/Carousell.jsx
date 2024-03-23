@@ -11,7 +11,7 @@ function Carousell({carou}) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: carou.length > 4 ? 4 : 1,
+    slidesToShow: 1,
     slidesToScroll: 1
   };
   return (

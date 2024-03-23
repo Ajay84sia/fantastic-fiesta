@@ -1,5 +1,5 @@
-import { Stack } from "@mui/material";
-import Carousell from "../Components/Carousell";
+import Carousell from "../Components/Carousel/Carousell";
+import FourCarousel from "../Components/Carousel/FourCarousel";
 
 const Home = () => {
   const homeMain = [
@@ -62,31 +62,24 @@ const Home = () => {
   const brandLove = [
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-nikepuma-min35.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-gap-snitch-min40.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-axsuperdry-min40.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-dnmx-netplay-min50.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-leecooper-johnplayers-min50.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-avaasa-fig-min60.jpg",
-      name : "brandLove"
     },
     {
       img: "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-teamspirit-performax-min50.jpg",
-      name : "brandLove"
     },
   ];
   return (
@@ -111,7 +104,7 @@ const Home = () => {
         src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-01022024-TOPBRANDS-header.jpg"
         alt=""
       />
-      <Carousell carou={brandLove} />
+      <FourCarousel carousel={brandLove} />
     </div>
   );
 };
